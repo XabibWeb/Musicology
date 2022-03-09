@@ -1,0 +1,1327 @@
+/* Fonts  */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&family=Oswald:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* Clear Default Css code  */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+*,
+*::before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:after,
+:active {
+    outline: none;
+}
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 1;
+    font-size: 14px;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+button {
+    cursor: pointer;
+}
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+a,
+a:visited {
+    color: #000;
+    text-decoration: none;
+}
+a {
+    cursor: pointer1;
+}
+a:hover {
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Nunito', sans-serif; */
+}
+
+/* Colors */
+:root {
+    --main-color: #e8631c;
+    --secondary-color: #303030;
+}
+
+/* Main Style */
+
+.wrapper{
+    width: 100%;
+    background: url(../img/header-img.png) no-repeat;
+    overflow: hidden;
+}
+
+
+/* Navbar Style  */
+
+.navbar{
+    width: 100%;
+    height: 103px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--secondary-color);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar_container{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.nav_logo{
+
+}
+
+.nav_item{
+    display: flex;
+    font-size: 30px;
+    color: #fff;
+}
+
+.nav_link{
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 0 41px;
+    list-style: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.nav_item a,
+.nav_link a{
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.nav_link a:hover{
+    color: var(--main-color);
+}
+
+.search:hover{
+    color: var(--main-color);
+}
+
+.mobile_menu{
+    display: none;
+}
+
+.mobile_menu a{
+    color: #fff;
+    font-size: 28px;
+}
+
+/* Header Style  */
+
+.header{
+    width: 100%;
+    height: 446px;
+}
+
+
+.header_section{
+    width: 100%;
+    margin: auto auto auto 69px;
+}
+
+.header_info{
+    width: 700px;
+    margin-top: 350px;
+}
+
+.header_title{
+    font-size: 125px;
+    color: #ffffff;
+    margin-bottom: 30px;
+    font-family: "Oswald";
+}
+
+.title{
+    font-size: 75px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Oswald";
+}
+
+.text{
+    font-size: 30px;
+    color: #ffffff;
+    line-height: 35px;
+    letter-spacing: .2px;
+    margin-bottom: 44px;
+}
+
+.header_info a{
+    color: #fff;
+}
+
+/* Primary Btn  */
+
+.btn{
+    width: 322px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 29px;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    border: none;
+    border-radius: 4px;
+    background-color: var(--main-color);
+    transition: all .3s ease;
+}
+
+.btn:hover{
+    box-shadow: 0 0 10px 5px #e8631c4f;
+}
+
+/* Main Style */
+
+.main{
+    position: relative;
+}
+
+/* Dance Tour Section Style */
+
+.dance_tour{
+    width: 100%;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.dance_tour-title{
+    font-size: 75px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Oswald";
+    text-align: center;
+    padding: 104px 0 58px 0;
+}
+
+.dance_tour-text{
+    width: 835px;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 400;
+    font-family: "Montserrat";
+    text-align: center;
+    margin: auto auto 83px auto;
+}
+
+.tour_block{
+    width: 88%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+    padding-bottom: 100px;
+    margin: auto;
+}
+
+.tour_item{
+    width: 30%;
+    background-color: var(--secondary-color);
+}
+
+.tour_item img{
+    width: 100%;
+}
+
+.tour_title{
+    font-size: 37px;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    padding: 37px 0 19px 0;
+    text-align: center;
+}
+
+.tour_title a{
+    color: #fff;
+}
+
+.tour_text{
+    font-size: 22px;
+    line-height: 25px;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+/* Pricing Section Style */
+
+.pricing{
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100px;
+}
+
+.pricing_top-shape{
+    position: absolute;
+    top: -420px;
+    left: -330px;
+}
+
+.pricing_title{
+    font-size: 75px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Oswald";
+    padding: 117px 0 58px 0;
+    text-align: center;
+}
+
+.pricing_text{
+    width: 835px;   
+    font-size: 30px;
+    line-height: 35px;
+    margin: auto auto 84px auto;
+    text-align: center;
+}   
+
+.pricing_plan{
+    width: 88%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+    margin: auto;
+}
+
+.plan_item{
+    width: 30%;
+    border-radius: 8px;
+    background-color: var(--main-color);
+    z-index: 1;
+    padding: 28px 25px;
+}
+
+.plan_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 37px 0 59px 0;
+}
+
+.plan_title{
+    font-size: 37px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Oswald";
+    text-align: center;
+}
+
+.plan_text{
+    font-size: 22px;
+    color: #fff;
+    line-height: 25px;
+    text-align: center;
+    margin: 35px 0 30px 0;
+}
+
+.plan_item a{
+    color: #fff;
+}
+
+.plan_item-btn{
+    width: 100%;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 29px;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    transition: all .3s ease;
+}
+
+.plan_item-btn:hover{
+    box-shadow: 0 0 10px 5px #3030304b;
+}
+
+/* Secondary Btn Style  */
+
+.secondary_btn{
+    width: 322px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 29px;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    text-align: center;
+    border-radius: 4px;
+    background-color: var(--secondary-color);
+    transition: all .3s ease;
+}
+
+.secondary_btn:hover{
+    box-shadow: 0 0 10px 5px #3030304b;
+}
+
+.pricing_bottom-shape{
+    position: absolute;
+    top: 1370px;
+    right: -220px;
+}
+
+/* Amazing Dance Section Style */
+
+.amazing_dance{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--main-color);
+    color: #fff;
+    overflow: hidden;
+}
+
+.amazing_dance-img img{
+    width: 100%;
+}
+
+.amazing_dance a{
+    color: #fff;
+}
+
+.amazing_dance-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 88px;
+    position: relative;
+    z-index: 1;
+}
+
+.dance_title{
+    font-size: 75px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Oswald";
+}
+
+.dance_text{
+    width: 100%;
+    font-size: 30px;
+    line-height: 35px;
+    margin: 59px 0 73px 0;
+}
+
+.amazing_bottom-shape{
+    position: absolute;
+    top: 2430px;
+    right: -185px;
+}
+
+/* Best Dance Section Style */
+
+.best_dance{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+.best_dance-img{
+    z-index: 1;
+}
+
+.best_dance-img img{
+    width: 100%;
+}
+
+.best_dance-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1;
+    margin-left: 107px;
+}
+
+.best_title{
+    font-size: 75px;
+    font-weight: 700;
+    font-family: "Oswald";
+    text-transform: uppercase;
+}
+
+.best_text{
+    font-size: 25px;
+    line-height: 30px;
+    margin: 58px 0 88px 0;
+}
+
+.best_dance-info a{
+    color: #fff;
+}
+
+.best_dance-shape{
+    position: absolute;
+    top: 3485px;
+    left: -125px;
+}
+
+/* Statistics Section Style */
+
+.statistics{
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: #fff;
+    position: relative;
+}
+
+.statistics_title{
+    font-size: 75px;
+    padding-top: 207px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    text-align: center;
+}
+
+.statistics_text{
+    width: 850px;
+    margin: 59px auto 194px auto;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+}
+
+.statistics_block{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 270px;
+}
+
+.statistics_item{
+}
+
+.item_title{
+    font-size: 67px;
+    font-weight: 700;
+    font-family: "Oswald";
+    text-align: center;
+}
+
+.item_text{
+    font-size: 42px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+/* Testimonials Section Style */
+
+.testimonials{
+    width: 100%;
+    background: url(../img/testimonials-img.png) no-repeat;
+    color: #fff;
+}
+
+.testimonials_text{
+    width: 950px;
+    font-size: 50px;
+    line-height: 55px;
+    margin: auto;
+    padding: 346px 0 77px 0;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+.testimonials_title{
+    font-size: 58px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    padding-bottom: 325px;
+}
+
+/* Subscribe Section Style */
+
+.subscribe{
+    width: 100%;
+    height: 597px;
+    background-color: var(--main-color);
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.subscribe_title{
+    font-size: 75px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 138px 0 59px 0;
+    font-family: "Oswald";
+    text-align: center;
+}
+
+.subscribe_text{
+    width: 850px;
+    font-size: 30px;
+    line-height: 35px;
+    margin: auto;
+    text-align: center;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+}
+
+.input{
+    width: 549px;
+    height: 63px;
+    font-size: 25px;
+    border-radius: 4px 0 0 4px;
+    padding-left: 29px;
+    outline: none;
+}
+
+.submit_btn{
+    width: 222px;
+    height: 63px;
+    border-radius: 0 4px 4px 0;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 29px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: "Oswald";
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.submit_btn:hover{
+    box-shadow: 0 0 10px 5px #3030304b;
+}
+
+.subscribe_left-shape{
+    position: absolute;
+    top: -350px;
+    left: -470px;
+    z-index: -1;
+}
+
+.subscribe_right-shape{
+    position: absolute;
+    top: -280px;
+    right: -400px;
+    z-index: -1;
+}
+
+
+/* Footer Section Style */
+
+.footer{
+    width: 100%;
+    display: flex;
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.footer_container{
+    width: 92%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    margin: 120px auto 89px auto;
+}
+
+.footer_company-block{
+    /* width: 500px; */
+}
+
+.footer_logo a{
+    font-size: 33px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    cursor: pointer;
+}
+
+.footer_text{
+    /* width: 85%; */
+    font-size: 25px;
+    line-height: 30px;
+    margin: 39px 0 37px 0;
+}
+
+.social_item{
+    display: flex;
+}
+
+.social_link{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-size: 24px;
+    color: #000;
+    border-radius: 50%;
+    margin: 0 16px 0 0;
+    transition: all .3s ease;
+}
+
+.social_link:hover{
+    box-shadow: 0 0 10px 5px #ffffff4d;
+}
+
+.footer_about{
+    padding-left: 40px;
+}
+
+.footer_title{
+    font-size: 33px;
+    text-transform: uppercase;
+    font-family: "Oswald";
+    cursor: pointer;
+}
+
+.footer_item{
+    margin-top: 39px;
+    font-size: 25px;
+    line-height: 44px;
+}
+
+.footer_title a{
+    color: #fff;
+    transition: all .3s ease;
+}
+
+.footer_title a:hover,
+.footer_link a:hover{
+    color: var(--main-color);
+}
+
+.footer_link a{
+    color: #fff;
+    text-transform: capitalize;
+    transition: all .3s ease;
+}
+
+.footer_services{
+    padding-left: 40px;
+
+}
+
+.footer_other{
+    padding-left: 40px;
+
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1024px) {
+    .wrapper{
+        max-width: 1024px;
+        width: 100%;
+    }
+
+    .navbar{
+        max-width: 1024px;
+        width: 100%;
+    }
+
+    .nav_item{
+        font-size: 20px;
+    }
+
+    .nav_item a img{
+        width: 100px;
+    }
+
+    .nav_link{
+        font-size: 18px;
+        padding: 0 25px;
+    }
+
+    .header{
+        height: 360px;
+    }
+
+    .header_title{
+        font-size: 90px;
+    }
+
+    .text{
+        width: 550px;
+        font-size: 22px;
+    }
+
+    .btn{
+        width: 240px;
+        height: 50px;
+        font-size: 26px;
+    }
+
+    .dance_tour{
+        /* height: 850px; */
+    }
+
+    .dance_tour-title{
+        padding: 90px 0 35px 0;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .dance_tour-text,
+    .pricing_text{
+        width: 600px;
+        font-size: 22px;
+    }
+
+    .tour_block{
+    }
+
+    .tour_item{
+        width: 32%;
+    }
+
+    .tour_item img{
+        width: 100%;
+    }
+
+    .tour_title{
+        font-size: 28px;
+    }
+
+    .tour_text{
+        font-size: 16px;
+    }
+
+    .pricing_title{
+        font-size: 50px;
+        font-weight: 600;
+        padding: 90px 0 35px 0;
+    }
+
+    .plan_item{
+        width: 32%;
+        padding: 18px;
+    }
+
+    .plan_title{
+        font-size: 28px;
+    }
+
+    .plan_text{
+        font-size: 16px;
+    }
+
+    .plan_item-btn{
+        height: 50px;
+        font-size: 26px;
+    }
+
+    .amazing_dance-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 40px;
+    }
+
+    .dance_title,
+    .best_title{
+        font-size: 50px;
+    }
+
+    .dance_text{
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 600;
+        margin: 30px 0 50px 0;
+    }
+
+    .dance_text span{
+        width: 100%;
+    }
+
+    .pricing_bottom-shape{
+        width: 70%;
+        top: 1200px;
+    }
+
+    .pricing_top-shape{
+        width: 70%;
+        top: -270px;
+        left: -250px;
+    }
+
+    .amazing_bottom-shape{
+        width: 70%;
+        top: 1950px;
+        right: -285px;
+    }
+
+    .best_dance-info{
+
+        margin-left: 50px;
+    }
+
+    .best_text{
+        font-size: 18px;
+        margin: 30px 0 50px 0;
+    }
+
+    .best_dance-shape{
+        width: 70%;
+        top: 2710px;
+    }
+
+    .secondary_btn{
+        width: 240px;
+        height: 50px;
+        font-size: 26px;
+    }
+
+    .statistics_title{
+        font-size: 50px;
+        font-weight: 600;
+        padding-top: 90px;
+    }
+
+    .statistics_block{
+        padding-bottom: 90px;
+    }
+
+    .statistics_text{
+        width: 600px;
+        font-size: 22px;
+        margin: 40px auto 110px auto;
+    }
+
+    .item_title{
+        font-size: 55px;
+        font-weight: 600;
+    }
+
+    .item_text{
+        font-size: 35px;
+    }
+
+    .testimonials_text{
+        width: 750px;
+        font-size: 35px;
+        padding: 200px 0 50px 0;
+    }
+
+    .testimonials_title{
+        font-size: 42px;
+        font-weight: 600;
+        padding-bottom: 200px;
+    }
+
+    .subscribe_title{
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    .subscribe_text{
+        width: 600px;
+        font-size: 22px;
+    }
+
+    .form{
+        
+    }
+
+    .input{
+        width: 500px;
+        height: 50px;
+    }
+
+    .submit_btn{
+        height: 50px;
+        font-size: 26px;
+    }
+
+    .footer_container{
+        margin: 80px auto 50px auto;
+    }
+
+    .footer_logo a{
+        font-size: 25px;
+    }
+
+    .footer_text{
+        font-size: 18px;
+    }
+
+    .social_link{
+        width: 38px;
+        height: 38px;
+        font-size: 22px;
+    }
+
+    .footer_title{
+        font-size: 25px;
+    }
+
+    .footer_item{
+        font-size: 18px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .nav_item:nth-child(1n+2){
+        display: none;
+    }
+
+    .mobile_menu{
+        display: block;
+    }
+
+    .header_section{
+        margin-left: 40px;
+    }
+
+    .header_info{
+        width: 90%;
+    }
+
+    .text{
+        width: 100%;
+    }
+
+    .pricing_bottom-shape,
+    .amazing_bottom-shape,
+    .best_dance-shape,
+    .subscribe_left-shape,
+    .subscribe_right-shape{
+        display: none;
+    }
+
+    .amazing_dance,
+    .best_dance{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .amazing_dance{
+        border-bottom: 1px solid #6b6b6b;
+    }
+
+    .amazing_dance-info,
+    .best_dance-info{
+        margin: 120px 0 120px 40px;
+    }
+
+    .dance_tour-text{
+        width: 88%;
+    }
+
+    .tour_block{
+
+    }
+
+    .tour_item{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .pricing_text{
+        width: 88%;
+    }
+
+    .plan_item{
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .testimonials_text{
+        width: 90%;
+    }
+
+    .subscribe_text{
+        width: 90%;
+    }
+
+    .form{
+        width: 90%;
+        margin: 50px auto auto auto;
+    }
+
+    .footer_item{
+        line-height: 35px;
+    }
+
+    .social_link{
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .footer_container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_company-block{
+        padding-bottom: 40px;
+        border-bottom: 1px solid #6b6b6b;
+    }
+
+    .footer_about,
+    .footer_services,
+    .footer_other{
+        padding: 0;
+        padding: 40px 0;
+        border-bottom: 1px solid #6b6b6b;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .nav_item:nth-child(1n+2){
+        display: none;
+    }
+
+    .header_section{
+        margin-left: 20px;
+    }
+
+    .header_info{
+        width: 90%;
+        margin-top: 250px;
+    }
+
+    .header_title{
+        font-size: 60px;
+    }
+
+    .text{
+        width: 100%;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .btn{
+        width: 100%;
+        height: 40px;
+        font-size: 22px;
+    }
+
+    .dance_tour-title{
+        padding: 50px 0 25px 0;
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    .dance_tour-text{
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    .tour_item{
+        width: 80%;
+        margin: auto auto 20px auto;
+    }
+
+    .tour_item:last-child{
+        margin: auto auto 0 auto;
+    }
+
+    .pricing_title{
+        padding: 50px 0 25px 0;
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    .pricing_text{
+        font-size: 20px;
+    }
+
+    .plan_item{
+        width: 80%;
+        margin: auto auto 20px auto;
+    }
+
+    .plan_item:last-child{
+        margin: auto auto 0 auto;
+    }
+
+    .plan_item-btn{
+        height: 40px;
+        font-size: 22px;
+    }
+
+    .amazing_dance-info,
+    .best_dance-info{
+        display: flex;
+        justify-content: center;
+        width: 90%;
+        margin: 80px auto 80px auto;
+    }
+
+    .best_title,
+    .dance_title{
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    .dance_text,
+    .best_text{
+        width: 90%;
+        font-size: 18px;
+    }
+
+    .secondary_btn{
+        width: 100%;
+        height: 40px;
+        font-size: 22px;
+    }
+
+    .statistics_title{
+        font-size: 35px;
+        font-weight: 500;
+        padding-top: 70px;
+    }
+
+    .statistics_text{
+        width: 88%;
+        font-size: 20px;
+        margin: 30px auto 70px auto;
+    }
+
+    .statistics_block{
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    .statistics_item{
+        margin-bottom: 50px;
+    }
+
+    .item_title{
+        font-size: 50px;
+        font-weight: 500;
+    }
+
+    .item_text{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .testimonials_text{
+        font-size: 24px;
+        line-height: 35px;
+        padding: 100px 0 30px 0;
+    }
+
+    .testimonials_title{
+        font-size: 30px;
+        font-weight: 500;
+        padding-bottom: 100px;
+    }
+
+    .subscribe_title{
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    .subscribe_text{
+        font-size: 20px;
+    }
+
+    .form{
+        width: 90%;
+    }
+
+    .input{
+        font-size: 18px;
+    }
+
+    .submit_btn{
+        font-size: 18px;
+    }
+
+    .footer_container{
+        margin: 60px auto 50px auto;
+    }
+
+    .footer_text,
+    .footer_item{
+        font-size: 16px;
+    }
+}
+
+
